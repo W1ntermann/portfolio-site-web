@@ -41,7 +41,7 @@ const About = () => {
                             variants={slideInFromLeft(0.5)}
                             className="flex flex-col items-center w-auto h-auto rounded-full overflow-hidden border-[6px] border-[#7042f88b] bg-gradient-to-r from-purple-500 to-cyan-500"
                         >
-                            {/* Виправлення: додаємо object-cover та робимо зображення круглим */}
+                           
                             <img 
                                 src="/cv-photo.jpg" 
                                 alt="profile" 
@@ -79,19 +79,7 @@ const About = () => {
                             className="Welcome-box px-[15px] w-[90%] md:w-3/4 py-[8px] z-[20] brder mb-[20px] border-[#7042f88b] opacity-[0.9]"
                         >
                             <h1 className="Welcome-text text-[16px] w-full text-justify">
-                                As a passionate Full Stack Developer with
-                                expertise in React, TypeScript, Django, REST,
-                                HTML, and CSS, I excel in crafting seamless
-                                digital experiences. My journey includes roles
-                                as a MuLearn Intern, Union Chairman at SNGIST,
-                                and CEO at SNGIST IEDC, where I&apos;ve driven
-                                innovation and led digital transformations. As a
-                                leader, I&apos;ve empowered teams towards
-                                excellence and fostered an entrepreneurial
-                                spirit. I&apos;m keen to connect with
-                                like-minded tech enthusiasts and visionaries to
-                                explore new opportunities and push the
-                                boundaries of innovation.
+                                As a passionate Full Stack Developer with expertise in React, TypeScript, C#, .NET, REST APIs, HTML, and CSS, I excel in crafting scalable and high-performance digital solutions. My experience includes building robust backend systems using ASP.NET Core, implementing clean architecture principles, and developing secure, efficient web applications.
                             </h1>
                         </motion.div>
                     )}

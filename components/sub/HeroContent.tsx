@@ -34,7 +34,7 @@ const HeroContent = () => {
                                     >
                                         <BsStars className="text-[#b49bff] mr-[10px] h-5 w-5" />
                                         <h1 className="Welcome-text text-[13px]">
-                                            Fullstack Developer
+                                            FullStack Developer
                                         </h1>
                                     </motion.div>
                                 )}
@@ -51,7 +51,7 @@ const HeroContent = () => {
                                     >
                                         <BsStars className="text-[#b49bff] mr-[10px] h-5 w-5" />
                                         <h1 className="Welcome-text text-[13px]">
-                                            Tech Innovator
+                                            .NET Specialist
                                         </h1>
                                     </motion.div>
                                 )}
@@ -67,7 +67,7 @@ const HeroContent = () => {
                                     >
                                         <BsStars className="text-[#b49bff] mr-[10px] h-5 w-5" />
                                         <h1 className="Welcome-text text-[13px]">
-                                            Team Lead
+                                            C# Developer
                                         </h1>
                                     </motion.div>
                                 )}
@@ -84,17 +84,16 @@ const HeroContent = () => {
                                     className="flex flex-col gap-6 mt-6 md:text-5xl text-4xl font-bold text-white max-w-[600px] w-auto h-auto z-20"
                                 >
                                     <span>
-                                        Coding
+                                        Building
                                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                                             {" "}
-                                            Dreams{" "}
+                                            FullStack{" "}
                                         </span>
-                                        into
+                                        Solutions with
                                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                                             {" "}
-                                            Reality{" "}
+                                            C# & .NET{" "}
                                         </span>
-                                        one line at a time
                                     </span>
                                 </motion.div>
                             )}
@@ -109,21 +108,10 @@ const HeroContent = () => {
                                     variants={slideInFromLeft(0.8)}
                                     className="text-sm md:text-md text-gray-400 my-5 max-w-[650px] z-30"
                                 >
-                                    <li>
-                                        Finalist in the Top 100 Coders Challenge
-                                    </li>
-                                    <li>
-                                        Ranked within the Top 9,000 on
-                                        HackerRank
-                                    </li>
-                                    <li>
-                                        Participated and Completed Hacktoberfest
-                                        2023
-                                    </li>
-                                    <li>
-                                        Served as a Mentor in Multiple
-                                        Hackathons.
-                                    </li>
+                                    <li>FullStack development with ASP.NET Core & Entity Framework</li>
+                                    <li>Building RESTful APIs and Web Applications with C#</li>
+                                    <li>Frontend development with React/Next.js</li>
+                                    <li>Database design with SQL Server & Entity Framework</li>
                                 </motion.div>
                             )}
                         </InView>

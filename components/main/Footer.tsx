@@ -31,6 +31,14 @@ interface NavLink {
 // Constants
 const SOCIAL_LINKS: SocialLink[] = [
     {
+        id: 'email',
+        url: "mailto:bogdangembatyuk@gmail.com",
+        icon: HiOutlineMail,
+        label: "Email",
+        hoverColor: "hover:text-red-400",
+        username: "bogdangembatyuk@gmail.com"
+    },
+    {
         id: 'instagram',
         url: "https://instagram.com/bohdan_codes",
         icon: RxInstagramLogo,
@@ -48,30 +56,15 @@ const SOCIAL_LINKS: SocialLink[] = [
     },
     {
         id: 'github',
-        url: "https://github.com/bohdan-codes",
+        url: "https://github.com/W1ntermann",
         icon: RxGithubLogo,
         label: "GitHub",
         hoverColor: "hover:text-gray-300",
-        username: "@bohdan-codes"
+        username: "@W1ntermann"
     },
-    {
-        id: 'linkedin',
-        url: "https://linkedin.com/in/bohdan-hembatiuk",
-        icon: RxLinkedinLogo,
-        label: "LinkedIn",
-        hoverColor: "hover:text-blue-600"
-    },
-    {
-        id: 'email',
-        url: "mailto:bogdangembatyuk@gmail.com",
-        icon: HiOutlineMail,
-        label: "Email",
-        hoverColor: "hover:text-red-400"
-    }
 ];
 
 const NAV_LINKS: NavLink[] = [
-    { id: 'blog', sectionId: 'blog', label: 'Blog', emoji: '📝' },
     { id: 'projects', sectionId: 'projects', label: 'Projects', emoji: '💻' },
     { id: 'about', sectionId: 'about', label: 'About Me', emoji: '👨‍💻' },
     { id: 'contact', sectionId: 'contact', label: 'Contact', emoji: '📫' },
@@ -100,7 +93,7 @@ const SocialIconButton = memo(({ link }: { link: SocialLink }) => {
     return (
         <button
             onClick={handleClick}
-            className={`text-gray-500 ${link.hoverColor} transition-all duration-300 p-2 hover:scale-110 transform focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-lg`}
+            className={`cursor-pointer text-gray-500 ${link.hoverColor} transition-all duration-300 p-2 hover:scale-110 active:scale-90 transform focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-lg`}
             aria-label={link.label}
             type="button"
         >
@@ -119,7 +112,7 @@ const SocialLinkItem = memo(({ link }: { link: SocialLink }) => {
     return (
         <button
             onClick={handleClick}
-            className={`flex items-center space-x-3 text-gray-400 ${link.hoverColor} transition-all duration-300 transform hover:translate-x-2 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-lg px-2 py-1 w-full text-left`}
+            className={`cursor-pointer flex items-center space-x-3 text-gray-400 ${link.hoverColor} transition-all duration-300 transform hover:translate-x-2 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-lg px-2 py-1 w-full text-left`}
             aria-label={`Visit ${link.label} profile`}
             type="button"
         >
@@ -172,15 +165,6 @@ const Footer: React.FC = () => {
                             Full-stack developer & tech enthusiast. Creating modern web applications 
                             and sharing experience with the community.
                         </p>
-                        <button
-                            onClick={handleEmailClick}
-                            className="flex items-center space-x-2 text-sm text-gray-400 hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-lg px-2 py-1 w-fit"
-                            aria-label="Send email to bogdangembatyuk@gmail.com"
-                            type="button"
-                        >
-                            <HiOutlineMail className="text-blue-400 flex-shrink-0" aria-hidden="true" />
-                            <span className="hover:underline">bogdangembatyuk@gmail.com</span>
-                        </button>
                     </section>
 
                     {/* Social Media section */}
@@ -207,7 +191,7 @@ const Footer: React.FC = () => {
                                 <button
                                     key={link.id}
                                     onClick={() => handleNavigation(link.sectionId)}
-                                    className="text-left text-gray-400 hover:text-green-400 transition-all duration-300 transform hover:translate-x-2 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-lg px-2 py-1"
+                                    className="cursor-pointer text-left text-gray-400 hover:text-green-400 transition-all duration-300 transform hover:translate-x-2 active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-lg px-2 py-1"
                                     aria-label={`Navigate to ${link.label} section`}
                                     type="button"
                                 >
@@ -231,7 +215,7 @@ const Footer: React.FC = () => {
                                 <Link
                                     key={link.id}
                                     href={link.href}
-                                    className="flex items-center space-x-2 text-gray-400 hover:text-green-400 transition-all duration-300 transform hover:translate-x-2 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-lg px-2 py-1"
+                                    className="cursor-pointer flex items-center space-x-2 text-gray-400 hover:text-green-400 transition-all duration-300 transform hover:translate-x-2 focus:outline-none focus:ring-2 focus:ring-green-400 rounded-lg px-2 py-1"
                                     aria-label={link.label}
                                 >
                                     {'icon' in link ? (
@@ -264,7 +248,7 @@ const Footer: React.FC = () => {
                         {/* Made with love */}
                         <Link 
                             href="/sponsor"
-                            className="group text-xs text-gray-600 hover:text-yellow-400 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-lg px-3 py-1 flex items-center space-x-1"
+                            className="group cursor-pointer text-xs text-gray-600 hover:text-yellow-400 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-lg px-3 py-1 flex items-center space-x-1"
                             aria-label="Support my work"
                         >
                             <span>Made with</span>
