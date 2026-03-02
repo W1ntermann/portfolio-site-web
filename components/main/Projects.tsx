@@ -29,11 +29,7 @@ const Projects = () => {
             title: "Landing Page",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
-        {
-            src: "/drone-site.jpg",
-            title: "Drone Company Website",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        },
+        
         {
             src: "/digital-psychplogy.jpg",
             title: "Landing Page",
