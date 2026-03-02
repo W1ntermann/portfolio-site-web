@@ -127,7 +127,7 @@ ${formData.description}
     // Active back button function
     const handleBackClick = useCallback(() => {
         if (isDirty) {
-            const confirmLeave = window.confirm('You have unsaved changes. Are you sure you want to leave?');
+            const confirmLeave = window.confirm("You have unsaved changes. Are you sure you want to leave?");
             if (confirmLeave) {
                 router.back();
             }
@@ -138,7 +138,7 @@ ${formData.description}
 
     const handleReset = useCallback(() => {
         if (isDirty) {
-            const confirmReset = window.confirm('Clear all fields?');
+            const confirmReset = window.confirm("Clear all fields?");
             if (confirmReset) {
                 setFormData({
                     name: "",
@@ -187,12 +187,12 @@ ${formData.description}
                 <div className="mb-12 text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                         <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                            Let's Work Together
+                            Let&apos;s Work Together
                         </span>
                     </h1>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                        Have a project in mind? I'd love to help bring it to life. 
-                        Fill out the form below and let's discuss your ideas.
+                        Have a project in mind? I&apos;d love to help bring it to life. 
+                        Fill out the form below and let&apos;s discuss your ideas.
                     </p>
                 </div>
 
@@ -204,7 +204,7 @@ ${formData.description}
                                 <div className="text-6xl mb-4">✅</div>
                                 <h2 className="text-2xl font-bold mb-2">Thank you!</h2>
                                 <p className="text-gray-300">
-                                    Your message has been sent. I'll get back to you as soon as possible.
+                                    Your message has been sent. I&apos;ll get back to you as soon as possible.
                                 </p>
                             </div>
                         ) : (
@@ -222,7 +222,7 @@ ${formData.description}
                                         onChange={handleInputChange}
                                         required
                                         className={`w-full px-4 py-3 bg-gray-900/50 border ${
-                                            errors.name ? 'border-red-500' : 'border-gray-700'
+                                            errors.name ? "border-red-500" : "border-gray-700"
                                         } rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400 hover:border-gray-600 transition-all duration-300 cursor-text`}
                                         placeholder="John Doe"
                                         disabled={isLoading}
@@ -245,7 +245,7 @@ ${formData.description}
                                         onChange={handleInputChange}
                                         required
                                         className={`w-full px-4 py-3 bg-gray-900/50 border ${
-                                            errors.email ? 'border-red-500' : 'border-gray-700'
+                                            errors.email ? "border-red-500" : "border-gray-700"
                                         } rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400 hover:border-gray-600 transition-all duration-300 cursor-text`}
                                         placeholder="john@example.com"
                                         disabled={isLoading}
@@ -332,7 +332,7 @@ ${formData.description}
                                         required
                                         rows={5}
                                         className={`w-full px-4 py-3 bg-gray-900/50 border ${
-                                            errors.description ? 'border-red-500' : 'border-gray-700'
+                                            errors.description ? "border-red-500" : "border-gray-700"
                                         } rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400 hover:border-gray-600 transition-all duration-300 resize-none overflow-hidden min-h-[120px] cursor-text pointer-events-auto`}
                                         placeholder="Tell me about your project... (Press Enter for new lines)"
                                         disabled={isLoading}
@@ -343,7 +343,7 @@ ${formData.description}
                                     <div className="mt-1 text-xs text-gray-500 flex justify-between">
                                         <span>{formData.description.length} characters</span>
                                         <span className={formData.description.length > 0 ? "text-green-400" : "text-gray-600"}>
-                                            {formData.description.length > 0 ? '✓' : 'Minimum 10 characters'}
+                                            {formData.description.length > 0 ? "✓" : "Minimum 10 characters"}
                                         </span>
                                     </div>
                                 </div>
@@ -454,7 +454,7 @@ ${formData.description}
 
                             {/* CTA Badge */}
                             <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/10 border border-purple-400/30 rounded-xl p-4 text-center mt-6">
-                                <p className="text-sm font-semibold text-purple-300">✨ Let's create something amazing</p>
+                                <p className="text-sm font-semibold text-purple-300">✨ Let&apos;s create something amazing</p>
                             </div>
                         </div>
                     </div>
