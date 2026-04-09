@@ -5,9 +5,10 @@ interface Props {
     src: string;
     title: string;
     description: string;
+    imageClassName?: string;
 }
 
-const ProjectCard = ({ src, title, description }: Props) => {
+const ProjectCard = ({ src, title, description, imageClassName }: Props) => {
     return (
         <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
             <Image
@@ -15,7 +16,7 @@ const ProjectCard = ({ src, title, description }: Props) => {
                 alt={title}
                 width={1000}
                 height={1000}
-                className="w-full object-contain"
+                className={imageClassName ?? "w-full object-contain"}
             />
 
             <div className="relative p-4">

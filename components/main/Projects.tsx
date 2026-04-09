@@ -48,7 +48,8 @@ const Projects = () => {
         {
             src: "/bot_invest.jpg",
             title: "Fintech Bot",
-            description: "Investment assistant bot designed to help users track market insights, understand financial options, and make more informed decisions."
+            description: "Investment assistant bot designed to help users track market insights, understand financial options, and make more informed decisions.",
+            imageClassName: "w-full h-56 object-cover md:h-64"
         },
     ];
 
@@ -121,6 +122,7 @@ const Projects = () => {
                                 src={project.src}
                                 title={project.title}
                                 description={project.description}
+                                imageClassName={project.imageClassName}
                             />
                         </SwiperSlide>
                     ))}
