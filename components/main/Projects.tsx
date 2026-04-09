@@ -46,10 +46,10 @@ const Projects = () => {
             description: "Fintech product website built to communicate reliability, simplify complex information, and support confident decision-making."
         },
         {
-            src: "/bot_invest.jpg",
+            src: "/invest-two.jpg",
             title: "Fintech Bot",
             description: "Investment assistant bot designed to help users track market insights, understand financial options, and make more informed decisions.",
-            imageClassName: "w-full h-56 object-cover md:h-64"
+            imageClassName: "w-full aspect-[16/9] object-cover object-top"
         },
     ];
 
