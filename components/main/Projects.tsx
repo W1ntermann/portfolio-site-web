@@ -17,33 +17,33 @@ const Projects = () => {
         {
             src: "/metalmaster.jpg",
             title: "Armada Industries Website",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description: "Corporate website for an industrial brand with a strong visual identity, clear service structure, and a conversion-focused layout."
         },
         {
             src: "/lemoners.jpg",
             title: "Startup Website",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description: "Modern startup landing page designed to present the product clearly, build trust fast, and guide visitors toward sign-up or contact."
         },
         {
             src: "/insurance.jpg",
             title: "Landing Page",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description: "Clean promotional page for an insurance service with structured content blocks, strong calls to action, and an easy-to-scan interface."
         },
         
         {
             src: "/digital-psychplogy.jpg",
             title: "Landing Page",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description: "A thoughtful landing page for a digital psychology product, focused on clarity, calm visuals, and approachable user experience."
         },
         {
             src: "/cottage-airy.jpg",
             title: "Cottage Rental Website",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description: "Booking-oriented website for a cottage rental business featuring inviting presentation, property highlights, and a relaxed travel aesthetic."
         },
         {
             src: "/shanti-site.jpg",
             title: "Fintech Website",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            description: "Fintech product website built to communicate reliability, simplify complex information, and support confident decision-making."
         },
     ];
 
