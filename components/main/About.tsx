@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 import { motion } from "framer-motion";
@@ -42,12 +43,13 @@ const About = () => {
                             className="flex flex-col items-center w-auto h-auto rounded-full overflow-hidden border-[6px] border-[#7042f88b] bg-gradient-to-r from-purple-500 to-cyan-500"
                         >
                            
-                            <img 
-                                src="/cv-photo.jpg" 
-                                alt="profile" 
-                                width={250} 
+                            <Image
+                                src="/cv-photo.jpg"
+                                alt="profile"
+                                width={250}
                                 height={250}
                                 className="rounded-full object-cover aspect-square"
+                                priority
                             />
                         </motion.div>
                     )}
