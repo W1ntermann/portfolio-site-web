@@ -99,9 +99,9 @@ const About = () => {
                     muted
                     autoPlay
                     playsInline
-                    preload="false"
+                    preload="none"
                     className="h-full"
-                    src="/encryption.webm/"
+                    src="/encryption.webm"
                 />
             </div>
         </section>

@@ -71,9 +71,9 @@ const NAV_LINKS: NavLink[] = [
 ];
 
 const SUPPORT_LINKS = [
-    { id: 'sponsor', href: '/sponsor', label: 'Sponsor my work', icon: FaHeart, iconColor: 'text-yellow-400' },
-    { id: 'collaboration', href: '/collaboration', label: 'Collaboration', emoji: '🤝' },
+    { id: 'projects', href: '/#projects', label: 'Projects', emoji: '💻' },
     { id: 'hire', href: '/hire', label: 'Hire me', icon: HiOutlineMail, iconColor: 'text-blue-400' },
+    { id: 'email', href: 'mailto:bogdangembatyuk@gmail.com', label: 'Contact', emoji: '📫' },
 ] as const;
 
 // Utility function for smooth scroll
@@ -246,18 +246,14 @@ const Footer: React.FC = () => {
                         </nav>
                         
                         {/* Made with love */}
-                        <Link 
-                            href="/sponsor"
-                            className="group cursor-pointer text-xs text-gray-600 hover:text-yellow-400 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded-lg px-3 py-1 flex items-center space-x-1"
-                            aria-label="Support my work"
-                        >
+                        <span className="group text-xs text-gray-600 flex items-center space-x-1 px-3 py-1">
                             <span>Made with</span>
                             <FaHeart 
-                                className="text-red-400 text-xs mx-1 group-hover:scale-110 transition-transform" 
+                                className="text-red-400 text-xs mx-1" 
                                 aria-hidden="true"
                             />
                             <span>by Bohdan</span>
-                        </Link>
+                        </span>
                     </div>
                 </div>
             </div>

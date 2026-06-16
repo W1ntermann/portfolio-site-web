@@ -26,13 +26,13 @@ const Projects = () => {
         },
         {
             src: "/insurance.jpg",
-            title: "Landing Page",
+            title: "Insurance Landing Page",
             description: "Clean promotional page for an insurance service with structured content blocks, strong calls to action, and an easy-to-scan interface."
         },
         
         {
             src: "/digital-psychplogy.jpg",
-            title: "Landing Page",
+            title: "Psychology Platform",
             description: "A thoughtful landing page for a digital psychology product, focused on clarity, calm visuals, and approachable user experience."
         },
         {
