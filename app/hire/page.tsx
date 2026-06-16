@@ -537,8 +537,8 @@ export default function HirePage() {
 
                     {/* Contact Info Sidebar */}
                     <div className="lg:col-span-1">
-                        <div className="bg-gradient-to-br from-blue-500/15 via-purple-500/10 to-blue-500/5 border border-blue-400/30 rounded-2xl p-8 space-y-1 sticky top-20 backdrop-blur-lg shadow-lg shadow-blue-500/10">
-                            <div className="mb-8">
+                        <div className="bg-gradient-to-br from-blue-500/15 via-purple-500/10 to-blue-500/5 border border-blue-400/30 rounded-2xl p-5 md:p-7 flex flex-col gap-2 sticky top-20 backdrop-blur-lg shadow-lg shadow-blue-500/10">
+                            <div className="mb-6">
                                 <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                                     Get in Touch
                                 </h3>
@@ -550,16 +550,16 @@ export default function HirePage() {
                             {/* Email */}
                             <a
                                 href="mailto:bogdangembatyuk@gmail.com"
-                                className="flex items-start space-x-4 group p-4 rounded-xl transition-all duration-300 hover:bg-blue-500/20 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
+                                className="flex items-start gap-3 group p-3 rounded-xl transition-all duration-300 hover:bg-blue-500/20 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
                             >
-                                <div className="text-3xl text-blue-400 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                <div className="text-2xl text-blue-400 flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-0.5">
                                     <HiOutlineMail />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">
+                                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-0.5">
                                         Email
                                     </p>
-                                    <p className="group-hover:text-blue-300 group-hover:underline break-all font-medium text-white truncate group-hover:no-truncate transition-all duration-300">
+                                    <p className="group-hover:text-blue-300 break-all font-medium text-white text-sm truncate transition-all duration-300" title="bogdangembatyuk@gmail.com">
                                         bogdangembatyuk@gmail.com
                                     </p>
                                 </div>
@@ -570,16 +570,16 @@ export default function HirePage() {
                                 href="https://t.me/badan_badanowycz"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-start space-x-4 group p-4 rounded-xl transition-all duration-300 hover:bg-blue-500/20 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
+                                className="flex items-start gap-3 group p-3 rounded-xl transition-all duration-300 hover:bg-blue-500/20 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
                             >
-                                <div className="text-3xl text-sky-400 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                <div className="text-2xl text-sky-400 flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-0.5">
                                     <FaTelegram />
                                 </div>
-                                <div>
-                                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-0.5">
                                         Telegram
                                     </p>
-                                    <p className="group-hover:text-sky-300 group-hover:underline font-medium text-white transition-all duration-300">
+                                    <p className="group-hover:text-sky-300 break-all font-medium text-white text-sm truncate transition-all duration-300" title="@badan_badanowycz">
                                         @badan_badanowycz
                                     </p>
                                 </div>
@@ -590,16 +590,16 @@ export default function HirePage() {
                                 href="https://linkedin.com/in/bohdan-hembatiuk"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-start space-x-4 group p-4 rounded-xl transition-all duration-300 hover:bg-blue-500/20 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
+                                className="flex items-start gap-3 group p-3 rounded-xl transition-all duration-300 hover:bg-blue-500/20 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
                             >
-                                <div className="text-3xl text-blue-600 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                <div className="text-2xl text-blue-600 flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-0.5">
                                     <FaLinkedin />
                                 </div>
-                                <div>
-                                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-0.5">
                                         LinkedIn
                                     </p>
-                                    <p className="group-hover:text-blue-300 group-hover:underline font-medium text-white transition-all duration-300">
+                                    <p className="group-hover:text-blue-300 break-all font-medium text-white text-sm truncate transition-all duration-300" title="Bohdan Hembatiuk">
                                         Bohdan Hembatiuk
                                     </p>
                                 </div>
@@ -610,16 +610,16 @@ export default function HirePage() {
                                 href="https://github.com/W1ntermann"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-start space-x-4 group p-4 rounded-xl transition-all duration-300 hover:bg-blue-500/20 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
+                                className="flex items-start gap-3 group p-3 rounded-xl transition-all duration-300 hover:bg-blue-500/20 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
                             >
-                                <div className="text-3xl text-gray-300 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                <div className="text-2xl text-gray-300 flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-0.5">
                                     <FaGithub />
                                 </div>
-                                <div>
-                                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-0.5">
                                         GitHub
                                     </p>
-                                    <p className="group-hover:text-gray-200 group-hover:underline font-medium text-white transition-all duration-300">
+                                    <p className="group-hover:text-gray-200 break-all font-medium text-white text-sm truncate transition-all duration-300" title="W1ntermann">
                                         W1ntermann
                                     </p>
                                 </div>
